@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>蘆洲莫札特音樂教室</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Noto Sans TC', sans-serif;
+      background-color: #fdfaf5;
+      color: #333;
+    }
+    header {
+      background-color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e0e0e0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      color: #444;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #d07a28;
+    }
+    .hero {
+      background-color: #fff4e5;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      padding: 60px 20px;
+    }
+    .hero img {
+      max-width: 300px;
+      height: auto;
+    }
+    .hero-text {
+      max-width: 500px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+    .cta-button {
+      margin-top: 20px;
+      background-color: #f4c662;
+      color: #000;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s;
+      display: inline-block;
+    }
+    .cta-button:hover {
+      background-color: #e0b24d;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-left: 5px solid #d07a28;
+      padding-left: 10px;
+      color: #222;
+    }
+    .card-grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    .card-title {
+      font-weight: bold;
+      margin-top: 10px;
+      font-size: 1.1rem;
+      color: #444;
+    }
+    footer {
+      background-color: #f8f8f8;
+      color: #777;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><img src="MOZARTPNG.png" alt="莫札特音樂教室 Logo"></div>
+    <nav>
+      <a href="#about">關於我們</a>
+      <a href="#services">服務項目</a>
+      <a href="#showcase">成果牆</a>
+      <a href="#events">活動剪影</a>
+      <a href="#contact">聯絡我們</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero-text">
+      <h1>蘆洲莫札特音樂教室</h1>
+      <p>融合專業與熱情，陪伴每一位孩子走上音樂之路</p>
+      <a href="#contact" class="cta-button">立即預約免費試聽</a>
+    </div>
+    <img src="images/mozart-piano.png" alt="莫札特彈鋼琴">
+  </div>
+
+  <section id="services">
+    <h2>服務項目</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="images/service1.png" alt="各項樂器教學">
+        <div class="card-title">各項樂器教學</div>
+      </div>
+      <div class="card">
+        <img src="images/service2.png" alt="樂器買賣">
+        <div class="card-title">樂器買賣</div>
+      </div>
+      <div class="card">
+        <img src="images/service3.png" alt="音樂檢定輔導">
+        <div class="card-title">音樂檢定輔導</div>
+      </div>
+      <div class="card">
+        <img src="images/service4.png" alt="鋼琴維修調音">
+        <div class="card-title">鋼琴維修調音</div>
+      </div>
+      <div class="card">
+        <img src="images/service5.png" alt="琴房出租">
+        <div class="card-title">琴房出租</div>
+      </div>
+      <div class="card">
+        <img src="images/service6.png" alt="爵士鼓室出租">
+        <div class="card-title">爵士鼓室出租</div>
+      </div>
+      <div class="card">
+        <img src="images/service7.png" alt="小型舞台出租">
+        <div class="card-title">小型舞台出租</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>聯絡我們</h2>
+    <p>
+      地址：新北市蘆洲區長安街299巷31號<br>
+      電話：02-2288-1072轉33<br>
+      LINE 官方帳號：@mozartmusic
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 蘆洲莫札特音樂教室 ｜ Mozart Music Studio
+  </footer>
+</body>
+</html>
